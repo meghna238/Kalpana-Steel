@@ -1,0 +1,198 @@
+/*
+Style Name: Contemporary
+Style Slug: contemporary
+Description: 
+*/
+
+/*MINIMAL BORDERS*/
+
+
+.prod-cat-details-link {display:none;}
+
+a.upcp-catalogue-link.no-underline {display: block; width:100%; text-align:center;}
+
+.upcp-thumb-item {border:none;}
+
+.upcp-thumb-title {border:none;}
+
+
+.upcp-thumb-price {
+width:100%;
+/*display: block;*/
+text-align: center;
+}
+
+input#upcp-name-search {
+}
+.prod-cat-end-detail-div a.upcp-catalogue-link,
+.prod-cat-details-link {display:none;}
+
+a.upcp-catalogue-link.no-underline {display: block; width:100%; text-align:center;}
+
+.upcp-thumb-price {
+width:100%;
+padding:0;
+margin:;
+}
+.upcp-thumb-image-div, .upcp-detail-item{
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+.upcp-thumb-image-div:hover, .upcp-detail-item:hover {
+  background: #DDDDDD;
+}
+
+.upcp-thumb-image-div:hover .upcp-thumb-image, .upcp-detail-item:hover .upcp-thumb-image{
+  opacity:0.5;
+}
+
+.upcp-thumb-title {
+    min-height: 25px;
+}
+
+.upcp-thumb-image-div {background:none;}
+
+.upcp-custom-field-thumbs {
+text-align: center;
+}
+
+a.upcp-catalogue-link.no-underline {
+line-height: 18px;
+}
+
+.upcp-prod-desc-custom-fields.upcp-custom-fields-thumbs {
+line-height: 24px;
+padding-top: 3px;
+}
+
+.upcp-mid-detail-div {border:none;}
+
+.upcp-detail-item {border:none;}
+
+.upcp-detail-price {
+    padding:none;
+    float:right;
+    margin:0 20px 5px;
+}
+
+.upcp-detail-image-div {background:none;}
+
+.prod-cat-inner {
+    width:78%;
+}
+
+.prod-cat-sidebar {
+    width:22%;
+}
+
+/*----------*/
+/*Thumbnail Layout*/
+
+.upcp-thumb-image-div {
+    width: 200px;
+    height: 269px;
+    margin: 0px;
+}
+
+.upcp-thumb-image-div a {
+    width: 200px;
+    height: 269px;
+}
+div.upcp-thumb-image-div img {
+    max-width: 200px;
+    max-height: 269px;
+}
+
+.upcp-sale-flag {
+  background: #fc4a1a;
+}
+
+.upcp-product-comparison-button {
+    background: #8E24AA;
+}
+
+.upcp-product-comparison-button.comparisonClicked {
+    background: #4A148C;
+}
+
+.upcp-thumb-item {
+    min-height:330px;
+    max-height:390px;
+    margin: 0 0 22px 22px;
+}
+
+.upcp-thumb-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-top: 12px;
+    margin-bottom: -4px;
+}
+
+.upcp-thumb-price {
+    line-height: 20px;
+    font-size:13px;
+    color: #f6a828;
+    margin-top:3px;
+}
+
+.upcp-thumb-title a {
+    color: #49274a !important;
+}
+
+
+/*List Layout*/
+.upcp-list-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #49274a !important;
+}
+
+.upcp-list-price {
+    font-size:13px;
+    color: #f6a828;
+}
+
+.upcp-list-item {
+    margin: 0 0 0 22px;
+}
+
+/*Detail Layout*/
+.upcp-detail-title {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #49274a !important;
+}
+
+.upcp-detail-price {
+    font-size:15px;
+    color: #f6a828;
+}
+
+.upcp-detail-desc {
+    letter-spacing: 1px;
+}
+
+.upcp-detail-item {
+    margin: 0 0 22px 22px;
+}
+
+/*Reviews*/
+.upcp-urp-review-score {
+    color: #ffce00;
+    margin-bottom: 1px;
+}

@@ -1,0 +1,4 @@
+section[id^="huge_it_catalog_content_"] a, ul[id^="huge_it_catalog_popup_list_"] a, div[id^="main-slider_"] a{
+    box-shadow: none !important;
+    text-decoration: none;
+}

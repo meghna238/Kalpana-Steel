@@ -1,0 +1,49 @@
+/*
+* This is a fork of Colorbox jQuery plugin
+*/
+#ccolorbox, #ccboxOverlay, #ccboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#ccboxWrapper {max-width:none;}
+#ccboxOverlay{position:fixed; width:100%; height:100%;}
+#ccboxMiddleLeft, #ccboxBottomLeft{clear:left;}
+#ccboxContent{position:relative;}
+#ccboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#ccboxTitle{margin:0;}
+#ccboxLoadingOverlay, #ccboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#ccboxPrevious, #ccboxNext, #ccboxClose, #ccboxSlideshow{cursor:pointer;}
+.ccboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.ccboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#ccolorbox, #ccboxContent, #ccboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ccolorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#ccboxOverlay{background:#fff;}
+#ccolorbox{outline:0;}
+    #ccboxContent{margin-top:32px; overflow:visible; background:#000;}
+        .ccboxIframe{background:#fff;}
+        #ccboxError{padding:50px; border:1px solid #ccc;}
+        #ccboxLoadedContent{background:#000; padding:1px;}
+        #ccboxLoadingGraphic{background:url(../images/2/loading.gif) no-repeat center center;}
+        #ccboxLoadingOverlay{background:#000;}
+        #ccboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+        #ccboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #ccboxPrevious, #ccboxNext, #ccboxSlideshow, #ccboxClose {border:0; padding:0; margin:0; overflow:visible; text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../images/2/controls.png) no-repeat 0 0;}
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #ccboxPrevious:active, #ccboxNext:active, #ccboxSlideshow:active, #ccboxClose:active {outline:0;}
+
+        #ccboxPrevious{background-position:0px 0px; right:44px;}
+        #ccboxPrevious:hover{background-position:0px -25px;}
+        #ccboxNext{background-position:-25px 0px; right:22px;}
+        #ccboxNext:hover{background-position:-25px -25px;}
+        #ccboxClose{background-position:-50px 0px; right:0;}
+        #ccboxClose:hover{background-position:-50px -25px;}
+        .ccboxSlideshow_on #ccboxPrevious, .ccboxSlideshow_off #ccboxPrevious{right:66px;}
+        .ccboxSlideshow_on #ccboxSlideshow{background-position:-75px -25px; right:44px;}
+        .ccboxSlideshow_on #ccboxSlideshow:hover{background-position:-100px -25px;}
+        .ccboxSlideshow_off #ccboxSlideshow{background-position:-100px 0px; right:44px;}
+        .ccboxSlideshow_off #ccboxSlideshow:hover{background-position:-75px -25px;}

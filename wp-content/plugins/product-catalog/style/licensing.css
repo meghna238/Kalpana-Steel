@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=greek,latin-ext');
+
+.catalog {
+    font-family: 'Roboto', sans-serif;
+}
+
+.catalog .catalog-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-top: 50px;
+}
+
+
+.catalog .catalog-block .licens {
+    width: 324px;
+    height: 115px;
+    background-color: #3e4268;
+    border-radius: 3px;
+    background-image: url(../images/sprite-licensing.png);
+    background-position: -155px -78px;
+    position: relative;
+    margin: 0 7px;
+    margin-bottom: 14px;
+}
+
+.catalog .catalog-block .licens a {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.catalog .catalog-block .licens:hover {
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+.catalog .catalog-block .licens .icon {
+    background-image: url(../images/sprite-licensing.png);
+}
+
+.catalog .catalog-block .licens .text {
+    color: #fff;
+    font-size: 19px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.catalog .catalog-block .licens .advanced {
+    width: 68px;
+    height: 67px;
+    background-position: -8px -286px;
+    margin-top: 7px;
+}
+
+.catalog .catalog-block .licens .product {
+    width: 65px;
+    height: 65px;
+    background-position: -114px -286px;
+    margin-top: 7px;
+}
+
+.catalog .catalog-block .licens .resizer {
+    width: 62px;
+    height: 62px;
+    background-position: -220px -291px;
+    margin-top: 8px;
+}
+
+.catalog .catalog-block .licens .color {
+    width: 58px;
+    height: 57px;
+    background-position: -325px -291px;
+    margin-top: 15px;
+}
+
+.catalog .catalog-block .licens .lightbox {
+    width: 58px;
+    height: 54px;
+    background-position: -60px -389px;
+    margin-top: 14px;
+}
+
+.catalog .catalog-block .licens .zoom {
+    width: 69px;
+    height: 62px;
+    background-position: -202px -385px;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

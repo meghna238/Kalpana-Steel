@@ -1,0 +1,62 @@
+/*
+    ccolorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#ccolorbox, #ccboxOverlay, #ccboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#ccboxWrapper {max-width:none;}
+#ccboxOverlay{position:fixed; width:100%; height:100%;}
+#ccboxMiddleLeft, #ccboxBottomLeft{clear:left;}
+#ccboxContent{position:relative;}
+#ccboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#ccboxTitle{margin:0;}
+#ccboxLoadingOverlay, #ccboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#ccboxPrevious, #ccboxNext, #ccboxClose, #ccboxSlideshow{cursor:pointer;}
+.ccboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.ccboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#ccolorbox, #ccboxContent, #ccboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of ccolorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#ccboxOverlay{background:#fff;}
+#ccolorbox{outline:0;}
+#ccboxTopLeft{width:25px; height:25px; background:url(../images/4/border1.png) no-repeat 0 0;}
+#ccboxTopCenter{height:25px; background:url(../images/4/border1.png) repeat-x 0 -50px;}
+#ccboxTopRight{width:25px; height:25px; background:url(../images/4/border1.png) no-repeat -25px 0;}
+#ccboxBottomLeft{width:25px; height:25px; background:url(../images/4/border1.png) no-repeat 0 -25px;}
+#ccboxBottomCenter{height:25px; background:url(../images/4/border1.png) repeat-x 0 -75px;}
+#ccboxBottomRight{width:25px; height:25px; background:url(../images/4/border1.png) no-repeat -25px -25px;}
+#ccboxMiddleLeft{width:25px; background:url(../images/4/border2.png) repeat-y 0 0;}
+#ccboxMiddleRight{width:25px; background:url(../images/4/border2.png) repeat-y -25px 0;}
+#ccboxContent{background:#fff; overflow:hidden;}
+.ccboxIframe{background:#fff;}
+#ccboxError{padding:50px; border:1px solid #ccc;}
+#ccboxLoadedContent{margin-bottom:20px;}
+#ccboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+#ccboxCurrent{position:absolute; bottom:0px; left:130px; color:#999;}
+#ccboxLoadingOverlay{background:#fff url(../images/4/loading.gif) no-repeat 5px 5px;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#ccboxPrevious, #ccboxNext, #ccboxSlideshow, #ccboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#ccboxPrevious:active, #ccboxNext:active, #ccboxSlideshow:active, #ccboxClose:active {outline:0;}
+
+#ccboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+#ccboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+#ccboxNext{position:absolute; bottom:0px; left:75px; color:#444;}
+#ccboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+
+
+.ccboxIE #ccboxTopLeft,
+.ccboxIE #ccboxTopCenter,
+.ccboxIE #ccboxTopRight,
+.ccboxIE #ccboxBottomLeft,
+.ccboxIE #ccboxBottomCenter,
+.ccboxIE #ccboxBottomRight,
+.ccboxIE #ccboxMiddleLeft,
+.ccboxIE #ccboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
